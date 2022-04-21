@@ -32,20 +32,12 @@ public abstract class Maquinaria implements Comparable<Maquinaria> {
 		if(mantenimientos.size() == 0) {
 			return "No se han realizado mantenimientos";
 		}
-		String resultado = "Fecha -> Costo -> Descripcion \n";
+		String resultado = "Mantenimientos: \n\nFecha -> Costo -> Descripcion \n";
 		for(int i = 0; i < mantenimientos.size(); i++) {
 			Mantenimiento mantenimiento = mantenimientos.get(i);
-			resultado += mantenimiento.getFecha() + " -> " + Integer.toString(mantenimiento.getCosto()) + " -> " + mantenimiento.getDescripcion() + "\n";
+			resultado += mantenimiento.toString() + "\n";
 		}
 		return resultado;
-	}
-	
-	public int getId() {
-		return id;
-	}
-
-	public Responsable getResponsable() {
-		return responsable;
 	}
 
 	public void setResponsable(Responsable responsable) {
@@ -59,38 +51,6 @@ public abstract class Maquinaria implements Comparable<Maquinaria> {
 	public void agregarMantenimiento(int costo, String fecha, String descripcion) {
 		Mantenimiento mantenimiento = new Mantenimiento(costo, fecha, descripcion);
 		mantenimientos.add(mantenimiento);
-	}
-	
-	public float getValor() {
-		return valor;
-	}
-
-	public void setValor(float valor) {
-		this.valor = valor;
-	}
-
-	public int getVidaUtil() {
-		return vidaUtil;
-	}
-
-	public void setVidaUtil(int vidaUtil) {
-		this.vidaUtil = vidaUtil;
-	}
-
-	public String getMarca() {
-		return marca;
-	}
-
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
-	public String getDescripcion() {
-		return descripcion;
-	}
-
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
 	}
 	
 	@Override

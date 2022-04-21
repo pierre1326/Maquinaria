@@ -11,22 +11,6 @@ public class Equipo extends Maquinaria {
 		this.volumen = volumen;
 	}
 
-	public float getPeso() {
-		return peso;
-	}
-
-	public void setPeso(float peso) {
-		this.peso = peso;
-	}
-
-	public float getVolumen() {
-		return volumen;
-	}
-
-	public void setVolumen(float volumen) {
-		this.volumen = volumen;
-	}
-
 	@Override
 	public String toString() {
 		String resultado = "ID: " + Integer.toString(id) + "\n" +

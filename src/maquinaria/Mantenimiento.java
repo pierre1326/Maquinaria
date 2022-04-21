@@ -12,28 +12,9 @@ public class Mantenimiento {
 		this.descripcion = descripcion;
 	}
 	
-	public int getCosto() {
-		return costo;
-	}
-	
-	public void setCosto(int costo) {
-		this.costo = costo;
-	}
-	
-	public String getFecha() {
-		return fecha;
-	}
-	
-	public void setFecha(String fecha) {
-		this.fecha = fecha;
-	}
-	
-	public String getDescripcion() {
-		return descripcion;
-	}
-	
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
+	@Override
+	public String toString() {
+		return fecha + " -> " + Integer.toString(costo) + " -> " + descripcion;
 	}
 	
 }

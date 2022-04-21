@@ -10,22 +10,6 @@ public class Herramienta extends Maquinaria {
 		this.valorSalvamento = valorSalvamento;
 		this.tasaDepreciacion = tasaDepreciacion;
 	}	
-	
-	public float getValorSalvamento() {
-		return valorSalvamento;
-	}
-
-	public void setValorSalvamento(float valorSalvamento) {
-		this.valorSalvamento = valorSalvamento;
-	}
-
-	public float getTasaDepreciacion() {
-		return tasaDepreciacion;
-	}
-
-	public void setTasaDepreciacion(float tasaDepreciacion) {
-		this.tasaDepreciacion = tasaDepreciacion;
-	}
 
 	@Override
 	public String toString() {
